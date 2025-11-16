@@ -1,0 +1,20 @@
+{"time":"2025-11-15T14:25:14.4715524+01:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-11-15T14:25:14.4732405+01:00","level":"INFO","msg":"created symlink","path":"wandb\\run-20251115_142514-np097749\\logs\\debug-core.log"}
+{"time":"2025-11-15T14:25:14.7138722+01:00","level":"INFO","msg":"created new stream","id":"np097749"}
+{"time":"2025-11-15T14:25:14.7138722+01:00","level":"INFO","msg":"stream: started","id":"np097749"}
+{"time":"2025-11-15T14:25:14.7174783+01:00","level":"INFO","msg":"sender: started","stream_id":"np097749"}
+{"time":"2025-11-15T14:25:14.7174783+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"np097749"}
+{"time":"2025-11-15T14:25:14.7174783+01:00","level":"INFO","msg":"handler: started","stream_id":"np097749"}
+{"time":"2025-11-15T14:25:15.3567268+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-15T16:16:40.480859+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-15T16:16:40.4816717+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-15T16:16:40.8755253+01:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2025-11-15T16:16:40.8761046+01:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2025-11-15T16:16:40.8761046+01:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2025-11-15T16:16:41.3797761+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-15T16:16:41.4829387+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history, summary","runtime_seconds":0.1031626}],"total_operations":1}}
+{"time":"2025-11-15T16:16:42.6975843+01:00","level":"INFO","msg":"stream: closing","id":"np097749"}
+{"time":"2025-11-15T16:16:42.6975843+01:00","level":"INFO","msg":"handler: closed","stream_id":"np097749"}
+{"time":"2025-11-15T16:16:42.6975843+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"np097749"}
+{"time":"2025-11-15T16:16:42.6985712+01:00","level":"INFO","msg":"sender: closed","stream_id":"np097749"}
+{"time":"2025-11-15T16:16:42.6985712+01:00","level":"INFO","msg":"stream: closed","id":"np097749"}

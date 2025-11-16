@@ -1,0 +1,7 @@
+c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:433: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=11` in the `DataLoader` to improve performance.
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       Test metric             DataLoader 0
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+        test_loss           0.28876280784606934
+        test_mae            0.3147566318511963
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────

@@ -1,0 +1,7 @@
+{"time":"2025-11-16T11:48:44.89265+01:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-11-16T11:48:44.89265+01:00","level":"INFO","msg":"created symlink","path":"wandb\\run-20251116_114844-8jyb4kxt\\logs\\debug-core.log"}
+{"time":"2025-11-16T11:48:45.170698+01:00","level":"INFO","msg":"created new stream","id":"8jyb4kxt"}
+{"time":"2025-11-16T11:48:45.170698+01:00","level":"INFO","msg":"stream: started","id":"8jyb4kxt"}
+{"time":"2025-11-16T11:48:45.1718099+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"8jyb4kxt"}
+{"time":"2025-11-16T11:48:45.1741551+01:00","level":"INFO","msg":"handler: started","stream_id":"8jyb4kxt"}
+{"time":"2025-11-16T11:48:45.1749741+01:00","level":"INFO","msg":"sender: started","stream_id":"8jyb4kxt"}

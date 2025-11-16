@@ -1,0 +1,20 @@
+{"time":"2025-11-16T11:30:56.4022058+01:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-11-16T11:30:56.4022058+01:00","level":"INFO","msg":"created symlink","path":"wandb\\run-20251116_113056-x3m2x96r\\logs\\debug-core.log"}
+{"time":"2025-11-16T11:30:56.5481688+01:00","level":"INFO","msg":"created new stream","id":"x3m2x96r"}
+{"time":"2025-11-16T11:30:56.5481688+01:00","level":"INFO","msg":"stream: started","id":"x3m2x96r"}
+{"time":"2025-11-16T11:30:56.5481688+01:00","level":"INFO","msg":"sender: started","stream_id":"x3m2x96r"}
+{"time":"2025-11-16T11:30:56.5481688+01:00","level":"INFO","msg":"handler: started","stream_id":"x3m2x96r"}
+{"time":"2025-11-16T11:30:56.5490873+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"x3m2x96r"}
+{"time":"2025-11-16T11:30:57.2611651+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-16T11:48:42.044126+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-16T11:48:42.0449459+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-16T11:48:42.4375052+01:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2025-11-16T11:48:42.4375052+01:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2025-11-16T11:48:42.4375052+01:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2025-11-16T11:48:42.8905191+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-16T11:48:43.0525199+01:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-11-16T11:48:44.2864937+01:00","level":"INFO","msg":"stream: closing","id":"x3m2x96r"}
+{"time":"2025-11-16T11:48:44.2864937+01:00","level":"INFO","msg":"handler: closed","stream_id":"x3m2x96r"}
+{"time":"2025-11-16T11:48:44.2864937+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"x3m2x96r"}
+{"time":"2025-11-16T11:48:44.2903609+01:00","level":"INFO","msg":"sender: closed","stream_id":"x3m2x96r"}
+{"time":"2025-11-16T11:48:44.2903609+01:00","level":"INFO","msg":"stream: closed","id":"x3m2x96r"}

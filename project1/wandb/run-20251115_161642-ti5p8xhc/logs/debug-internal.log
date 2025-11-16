@@ -1,0 +1,12 @@
+{"time":"2025-11-15T16:16:43.105028+01:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-11-15T16:16:43.105028+01:00","level":"INFO","msg":"created symlink","path":"wandb\\run-20251115_161642-ti5p8xhc\\logs\\debug-core.log"}
+{"time":"2025-11-15T16:16:43.3567803+01:00","level":"INFO","msg":"created new stream","id":"ti5p8xhc"}
+{"time":"2025-11-15T16:16:43.3567803+01:00","level":"INFO","msg":"stream: started","id":"ti5p8xhc"}
+{"time":"2025-11-15T16:16:43.3567803+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"ti5p8xhc"}
+{"time":"2025-11-15T16:16:43.3567803+01:00","level":"INFO","msg":"sender: started","stream_id":"ti5p8xhc"}
+{"time":"2025-11-15T16:16:43.357405+01:00","level":"INFO","msg":"handler: started","stream_id":"ti5p8xhc"}
+{"time":"2025-11-15T16:16:43.9833446+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-15T19:32:44.6780146+01:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/bpukacki-poznan-university-of-technology/timeseries-base_lstm-optimization/ti5p8xhc/file_stream"}
+{"time":"2025-11-15T19:39:32.1227316+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-11-15T19:39:32.1288902+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-11-15T19:39:32.1314937+01:00","level":"INFO","msg":"Pausing system monitor"}

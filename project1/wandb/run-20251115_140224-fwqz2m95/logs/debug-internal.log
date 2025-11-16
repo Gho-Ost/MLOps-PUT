@@ -1,0 +1,20 @@
+{"time":"2025-11-15T14:02:24.1478248+01:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-11-15T14:02:24.1478248+01:00","level":"INFO","msg":"created symlink","path":"wandb\\run-20251115_140224-fwqz2m95\\logs\\debug-core.log"}
+{"time":"2025-11-15T14:02:24.3929355+01:00","level":"INFO","msg":"created new stream","id":"fwqz2m95"}
+{"time":"2025-11-15T14:02:24.3934923+01:00","level":"INFO","msg":"stream: started","id":"fwqz2m95"}
+{"time":"2025-11-15T14:02:24.3934923+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"fwqz2m95"}
+{"time":"2025-11-15T14:02:24.3934923+01:00","level":"INFO","msg":"handler: started","stream_id":"fwqz2m95"}
+{"time":"2025-11-15T14:02:24.3938537+01:00","level":"INFO","msg":"sender: started","stream_id":"fwqz2m95"}
+{"time":"2025-11-15T14:02:25.124761+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-11-15T14:25:11.8410884+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-11-15T14:25:11.8421736+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-11-15T14:25:12.4776398+01:00","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2025-11-15T14:25:12.4776398+01:00","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2025-11-15T14:25:12.4776398+01:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2025-11-15T14:25:12.8541902+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.1720527,"progress":"1.4KB/1.4KB"},{"desc":"uploading output.log","runtime_seconds":0.1720527}],"total_operations":2}}
+{"time":"2025-11-15T14:25:12.9264333+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-15T14:25:14.2299416+01:00","level":"INFO","msg":"stream: closing","id":"fwqz2m95"}
+{"time":"2025-11-15T14:25:14.2299416+01:00","level":"INFO","msg":"handler: closed","stream_id":"fwqz2m95"}
+{"time":"2025-11-15T14:25:14.2299416+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"fwqz2m95"}
+{"time":"2025-11-15T14:25:14.2299416+01:00","level":"INFO","msg":"sender: closed","stream_id":"fwqz2m95"}
+{"time":"2025-11-15T14:25:14.2299416+01:00","level":"INFO","msg":"stream: closed","id":"fwqz2m95"}

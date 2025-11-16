@@ -1,0 +1,114 @@
+2025-11-15 13:40:16,617 INFO    MainThread:15664 [wandb_setup.py:_flush():80] Current SDK version is 0.23.0
+2025-11-15 13:40:16,617 INFO    MainThread:15664 [wandb_setup.py:_flush():80] Configure stats pid to 15664
+2025-11-15 13:40:16,618 INFO    MainThread:15664 [wandb_setup.py:_flush():80] Loading settings from C:\Users\Bartek\.config\wandb\settings
+2025-11-15 13:40:16,618 ERROR   MainThread:15664 [wandb_setup.py:_flush():82] error in wandb.init()
+Traceback (most recent call last):
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\IPython\core\interactiveshell.py", line 3699, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Bartek\AppData\Local\Temp\ipykernel_15664\2731011094.py", line 15, in <module>
+    best_params = experiment.optimize_hyperparameters(n_trials=20, max_epochs=30)
+  File "c:\Users\Bartek\Desktop\Studies\masters\semII\MLOps-PUT\project1\utils151942.py", line 409, in optimize_hyperparameters
+    study.optimize(objective, n_trials=n_trials)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\optuna\study\study.py", line 490, in optimize
+    _optimize(
+    ~~~~~~~~~^
+        study=self,
+        ^^^^^^^^^^^
+    ...<7 lines>...
+        show_progress_bar=show_progress_bar,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\optuna\study\_optimize.py", line 67, in _optimize
+    _optimize_sequential(
+    ~~~~~~~~~~~~~~~~~~~~^
+        study,
+        ^^^^^^
+    ...<8 lines>...
+        progress_bar=progress_bar,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\optuna\study\_optimize.py", line 164, in _optimize_sequential
+    frozen_trial_id = _run_trial(study, func, catch)
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\optuna\study\_optimize.py", line 262, in _run_trial
+    raise func_err
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\optuna\study\_optimize.py", line 205, in _run_trial
+    value_or_values = func(trial)
+  File "c:\Users\Bartek\Desktop\Studies\masters\semII\MLOps-PUT\project1\utils151942.py", line 403, in objective
+    trainer.fit(model, datamodule=self.datamodule)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\lightning\pytorch\trainer\trainer.py", line 560, in fit
+    call._call_and_handle_interrupt(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, self._fit_impl, model, train_dataloaders, val_dataloaders, datamodule, ckpt_path
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\lightning\pytorch\trainer\call.py", line 49, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\lightning\pytorch\trainer\trainer.py", line 598, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\lightning\pytorch\trainer\trainer.py", line 973, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\lightning\pytorch\trainer\call.py", line 102, in _call_setup_hook
+    if hasattr(logger, "experiment"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\lightning\fabric\loggers\logger.py", line 118, in experiment
+    return fn(self)
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\lightning\pytorch\loggers\wandb.py", line 407, in experiment
+    self._experiment = wandb.init(**self._wandb_init)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\wandb\sdk\wandb_init.py", line 1603, in init
+    get_sentry().reraise(e)
+    ~~~~~~~~~~~~~~~~~~~~^^^
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\wandb\analytics\sentry.py", line 190, in reraise
+    raise exc.with_traceback(tb)
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\wandb\sdk\wandb_init.py", line 1524, in init
+    wi.maybe_login(init_settings)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\wandb\sdk\wandb_init.py", line 183, in maybe_login
+    run_settings = self._wl.settings.model_copy()
+                   ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\wandb\sdk\wandb_setup.py", line 307, in settings
+    self._load_settings(
+    ~~~~~~~~~~~~~~~~~~~^
+        system_settings_path=None,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        disable_sagemaker=False,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\wandb\sdk\wandb_setup.py", line 231, in _load_settings
+    self._settings.update_from_system_config_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\wandb\sdk\wandb_settings.py", line 1860, in update_from_system_config_file
+    setattr(self, key, value)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\pydantic\main.py", line 1033, in __setattr__
+    setattr_handler(self, name, value)  # call here to not memo on possibly unknown fields
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Bartek\anaconda3\envs\ai\Lib\site-packages\pydantic\main.py", line 111, in <lambda>
+    'validate_assignment': lambda model, name, val: model.__pydantic_validator__.validate_assignment(model, name, val),  # pyright: ignore[reportAssignmentType]
+                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for Settings
+anonymous
+  Input should be 'allow', 'must' or 'never' [type=literal_error, input_value='true', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+2025-11-15 13:40:16,640 INFO    MainThread:15664 [wandb_init.py:setup_run_log_directory():713] Logging user logs to .\wandb\run-20251115_134016-mvwjy3z4\logs\debug.log
+2025-11-15 13:40:16,641 INFO    MainThread:15664 [wandb_init.py:setup_run_log_directory():714] Logging internal logs to .\wandb\run-20251115_134016-mvwjy3z4\logs\debug-internal.log
+2025-11-15 13:40:16,641 INFO    MainThread:15664 [wandb_init.py:monkeypatch_ipython():632] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000001CE9D68C050>
+2025-11-15 13:40:16,641 INFO    MainThread:15664 [wandb_init.py:init():840] calling init triggers
+2025-11-15 13:40:16,641 INFO    MainThread:15664 [wandb_init.py:init():845] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-11-15 13:40:16,641 INFO    MainThread:15664 [wandb_init.py:init():888] starting backend
+2025-11-15 13:40:19,071 INFO    MainThread:15664 [wandb_init.py:init():891] sending inform_init request
+2025-11-15 13:40:19,132 INFO    MainThread:15664 [wandb_init.py:init():899] backend started and connected
+2025-11-15 13:40:19,141 INFO    MainThread:15664 [wandb_run.py:_label_probe_notebook():1323] probe notebook
+2025-11-15 13:40:19,150 INFO    MainThread:15664 [wandb_run.py:_label_probe_notebook():1333] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2025-11-15 13:40:19,150 INFO    MainThread:15664 [wandb_init.py:init():969] updated telemetry
+2025-11-15 13:40:19,460 INFO    MainThread:15664 [wandb_init.py:init():993] communicating run to backend with 90.0 second timeout
