@@ -5,8 +5,4 @@ labels:
 include:
   - "*.py"
 python:
-  packages:
-    - torch
-    - torchvision
-    - pillow
-    - numpy
+  requirements_txt: "./requirements.txt"
