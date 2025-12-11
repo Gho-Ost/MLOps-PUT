@@ -1,0 +1,12 @@
+service: "service.py:ResNetService"
+labels:
+  owner: "bartek"
+  project: "mlops-project3"
+include:
+  - "*.py"
+python:
+  packages:
+    - torch
+    - torchvision
+    - pillow
+    - numpy
