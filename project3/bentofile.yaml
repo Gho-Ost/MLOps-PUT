@@ -1,12 +1,8 @@
-service: "service.py:ResNetService"
+service: "service.py:MobileNetV3Service"
 labels:
   owner: "bartek"
   project: "mlops-project3"
 include:
   - "*.py"
 python:
-  packages:
-    - torch
-    - torchvision
-    - pillow
-    - numpy
+  requirements_txt: "./requirements.txt"

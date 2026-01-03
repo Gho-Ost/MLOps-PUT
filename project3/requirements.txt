@@ -1,3 +1,4 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
 bentoml>=1.0.0
 torch
 torchvision

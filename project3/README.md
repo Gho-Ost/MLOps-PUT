@@ -24,7 +24,7 @@ This project demonstrates how to serve a PyTorch ResNet model using BentoML, con
 3.  **Run the Service Locally**
     Start the BentoML development server.
     ```bash
-    bentoml serve service.py:ResNetService --reload
+    bentoml serve service.py:MobileNetV3Service --reload
     ```
     The service will be available at `http://localhost:3000`.
 
@@ -42,14 +42,14 @@ Package the model, service code, and dependencies into a standard distribution f
 ```bash
 bentoml build
 ```
-This will output a tag, e.g., `resnet_classifier_service:latest`.
+This will output a tag, e.g., `mobilenet_v3_small_classifier_service:latest`.
 
 ### 2. Containerize (Docker)
 Convert the Bento into a Docker image.
 ```bash
-bentoml containerize resnet_classifier_service:latest
+DOCKER_BUILDKIT=0 bentoml containerize mobilenet_v3_small_classifier_service:latest
 ```
-*Note: You can verify it works by running `docker run -p 3000:3000 resnet_classifier_service:latest` locally.*
+*Note: You can verify it works by running `docker run -p 3000:3000 mobilenet_v3_small_classifier_service:latest` locally.*
 
 ### 3. Deploy to Cloud VM (e.g., AWS EC2)
 
@@ -73,17 +73,17 @@ bentoml containerize resnet_classifier_service:latest
     pip3 install -r requirements.txt
     python3 model_setup.py
     bentoml build
-    bentoml containerize resnet_classifier_service:latest
+    DOCKER_BUILDKIT=0 bentoml containerize mobilenet_v3_small_classifier_service:latest
     ```
 5.  **Run Container**:
     ```bash
-    docker run -d -p 3000:3000 resnet_classifier_service:latest
+    docker run -d -p 3000:3000 mobilenet_v3_small_classifier_service:latest
     ```
 
 #### Option B: Push Image to Registry (AWS ECR / Docker Hub)
-1.  Tag your local image: `docker tag resnet_classifier_service:latest <your-registry>/resnet-service:v1`
+1.  Tag your local image: `docker tag mobilenet_v3_small_classifier_service:latest <your-registry>/mobilenet_v3_small_classifier_service:v1`
 2.  Push: `docker push ...`
-3.  Pull on VM: `docker run -d -p 3000:3000 <your-registry>/resnet-service:v1`
+3.  Pull on VM: `docker run -d -p 3000:3000 <your-registry>/mobilenet_v3_small_classifier_service:v1`
 
 ### 4. Verify External Access
 From your **local machine**, run the client script pointing to the VM's public IP.
