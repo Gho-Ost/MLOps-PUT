@@ -70,6 +70,11 @@ DOCKER_BUILDKIT=0 bentoml containerize mobilenet_v3_small_classifier_service:lat
 4.  **Install BentoML & Build**:
     ```bash
     cd project3
+    
+    # Create and activate a virtual environment (fixes PEP 668 error)
+    python3 -m venv venv
+    source venv/bin/activate
+    
     pip3 install -r requirements.txt
     python3 model_setup.py
     bentoml build
@@ -90,4 +95,21 @@ From your **local machine**, run the client script pointing to the VM's public I
 
 ```bash
 python client.py http://<vm-public-ip>:3000/classify
+```
+
+## Troubleshooting
+
+### Docker Buildx Error (BuildKit)
+If you see an error like `BuildKit is enabled but the buildx component is missing`, it means the Docker Buildx plugin is not installed on your system.
+
+**Option 1: Install Buildx (Recommended on Ubuntu)**
+```bash
+sudo apt-get update
+sudo apt-get install -y docker-buildx-plugin
+```
+
+**Option 2: Disable BuildKit**
+Run the containerize command with `DOCKER_BUILDKIT=0`:
+```bash
+DOCKER_BUILDKIT=0 bentoml containerize resnet_classifier_service:latest
 ```
