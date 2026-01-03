@@ -79,7 +79,7 @@ DOCKER_BUILDKIT=0 bentoml containerize mobilenet_v3_small_classifier_service:lat
     ```bash
     docker run -d -p 3000:3000 mobilenet_v3_small_classifier_service:latest
     ```
-
+ 
 #### Option B: Push Image to Registry (AWS ECR / Docker Hub)
 1.  Tag your local image: `docker tag mobilenet_v3_small_classifier_service:latest <your-registry>/mobilenet_v3_small_classifier_service:v1`
 2.  Push: `docker push ...`
