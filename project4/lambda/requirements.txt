@@ -1,0 +1,4 @@
+boto3
+pillow
+
+# Removing torch/torchvision from here to install via explicit pip command with --find-links/index-url in Dockerfile

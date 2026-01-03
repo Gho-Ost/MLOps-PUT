@@ -2,6 +2,9 @@
 
 This project demonstrates how to serve a PyTorch ResNet model using BentoML, containerize it with Docker, and deploy it to a Cloud VM (AWS EC2, Google Cloud, or Azure).
 
+## Encountered issues:
+- image size
+
 ## Prerequisites
 
 -   Python 3.8+ installed locally
